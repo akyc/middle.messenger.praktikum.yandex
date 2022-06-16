@@ -1,0 +1,15 @@
+mixin chat(imgSrc, title, message, date, unread)
+    .chat
+        .chat__avatar
+            if imgSrc
+                img(src=imgSrc)
+            else
+                img(src='https://fakeimg.pl/50x50/?text=Аватар')
+        .chat__info
+            .chat__info__title=title
+            .chat__info__last-message=message
+        .chat__params
+            .chat__params__date=date
+            if unread
+                .chat__params__unread 
+                    span=unread

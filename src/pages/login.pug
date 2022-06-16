@@ -1,0 +1,17 @@
+extends ../templates/main
+include ../components/input/input
+include  ../components/button/button
+
+block pagetitle
+    title Вход
+block pagecontent
+    .login-page.form-container
+        form.form(action="")
+            .form-entries
+                h1.form-entries__title Вход 
+                +input('text', 'login', 'input-line input-login', 'Логин')
+                +input('password', 'password', 'input-line input-password', 'Пароль')
+            .form-controls
+                +button('btn btn-primary btn-block', 'Авторизоваться')
+                +button('btn btn-link btn-block', 'Нет аккаунта?')
+

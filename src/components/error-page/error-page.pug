@@ -1,0 +1,6 @@
+include ../button/button
+mixin error-page(title, subtitle)
+    .error-page
+        h1.error-page__title= title
+        span.error-page__subtitle= subtitle
+        +button('btn btn-link go-home', 'Назад к чатам')

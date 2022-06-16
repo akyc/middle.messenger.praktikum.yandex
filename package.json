@@ -1,0 +1,33 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "middle.messenger.praktikum.yandex",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "start": "npm run build && node app.js",
+    "dev": "parcel src/index.pug --open --port 3000",
+    "build": "parcel build src/**/*.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akyc/middle.messenger.praktikum.yandex.git"
+  },
+  "keywords": [],
+  "author": "Andrew Zyuzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akyc/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/akyc/middle.messenger.praktikum.yandex#readme",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.6.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "autoprefixer": "^10.4.7",
+    "express": "^4.18.1",
+    "parcel": "^2.6.0",
+    "postcss": "^8.4.14"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

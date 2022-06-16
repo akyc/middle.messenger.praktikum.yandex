@@ -1,0 +1,6 @@
+extends ../templates/main
+include ../components/error-page/error-page
+block pagetitle
+    title 505
+block pagecontent
+    +error-page('505', 'Мы уже фиксим')
