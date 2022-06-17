@@ -6,7 +6,8 @@
 * Фреймворк Node.js [Express](https://expressjs.com/)
 
 [Макет в Figma](https://www.figma.com/proto/918g5LbKL1nEP29J7y10UR/Chat(yandex)?page-id=0%3A1&node-id=0%3A1&scaling=contain)
-[Хостинг на Netlify]()
+
+[Хостинг на Netlify](https://62abc4b259682553d567f4ce--euphonious-valkyrie-d4e74d.netlify.app/)
 
 ## Запуск проекта
 Для запска на локальной машине потребуется установленный Nodejs. Далее необходимо перейти в папку проекта и установкить зависимости
