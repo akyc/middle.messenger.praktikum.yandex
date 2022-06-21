@@ -1,0 +1,38 @@
+.input{
+    &-container{
+        position: relative;
+        margin-top: 11px;
+        ::placeholder{
+            color: white;
+        }
+    }
+    &-line{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        border: transparent;
+        border-bottom: 1px solid $primary-color;
+        font-size: 13px;
+        color: $text-color;
+        padding: 6px 0;
+        margin-bottom: 16px;
+        &:focus~label,
+        &:not(:placeholder-shown)~label{
+            font-size: 9px;
+            top:-12px;
+            padding: 0;
+        }
+        
+    }
+    &-label{
+        position: absolute;
+        pointer-events: none;
+        top:0;
+        left:0;
+        color: $secondary-color;
+        font-size: 13px;
+        padding: 6px 0;
+        transition: all .2s ease-in-out;
+    }
+    
+}
