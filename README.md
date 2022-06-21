@@ -26,3 +26,5 @@ npm run build
 ```bash
 npm start
 ```
+
+[Pull request sprint_1](https://github.com/akyc/middle.messenger.praktikum.yandex/pull/1)
