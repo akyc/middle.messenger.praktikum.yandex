@@ -27,4 +27,4 @@ npm run build
 npm start
 ```
 
-[Pull request sprint_1](https://github.com/akyc/middle.messenger.praktikum.yandex/pull/1)
+[Pull request sprint_2](https://github.com/akyc/middle.messenger.praktikum.yandex/pull/2)
