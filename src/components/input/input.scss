@@ -6,6 +6,10 @@
             color: white;
         }
     }
+    &-block{
+        width: 100%;
+        display: block;
+    }
     &-line{
         display: block;
         width: 100%;
@@ -15,12 +19,16 @@
         font-size: 13px;
         color: $text-color;
         padding: 6px 0;
-        margin-bottom: 16px;
+        margin-bottom: 6px;
         &:focus~label,
         &:not(:placeholder-shown)~label{
             font-size: 9px;
             top:-12px;
             padding: 0;
+        }
+        &-secondery{
+            text-align: right;
+            border-bottom: transparent;
         }
         
     }
@@ -33,6 +41,11 @@
         font-size: 13px;
         padding: 6px 0;
         transition: all .2s ease-in-out;
+    }
+    &-validation-message{
+        color: $danger-color;
+        font-size: 11px;
+        margin-bottom: 12px;
     }
     
 }

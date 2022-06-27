@@ -25,8 +25,11 @@
         width: 100%;
         text-align: center;
     }
+    &-round {
+        border-radius: 50%;
+    }
     &.red{
-        color: #FF0000;
+        color: $danger-color;
     }
     &-md{
         font-size: 13px;

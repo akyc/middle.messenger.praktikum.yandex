@@ -1,29 +1,39 @@
 .chat{
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid $border-color;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 2px 0;
-    padding: 10px 9px;
     justify-content: space-between;
     &:hover{
-        background: #E4EDFD;
-        cursor: pointer;
+        .chat__inner{
+            background: $bg-primary-hover;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+    &__inner{
+        display: flex;
+        flex: 100%;
+        margin: 2px 0;
+        padding: 10px 9px;
+    }
+    &__selected {
+        background: $bg-primary-hover;
     }
     &__avatar{
-        flex: 0 0 auto;
-        width: 47px;
-        margin-right: 10px;
+        flex: none;
+        padding: 0 10px 0 0;
         img {
-            max-width: 100%;
+            width: 47px;
+            height: 47px;
             border-radius: 50%;
-            height: auto;
         }
     }
     &__info{
-        flex: 0 0 auto;
-        width: auto;
-        padding-right: 15px;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
         &__title{
             font-size: 13px;
             color: $text-color;
@@ -51,7 +61,7 @@
             line-height: 13px;
         }
         &__unread{
-            color: white;
+            color: #ffffff;
             background: $primary-color;
             width: 20px;
             height: 20px;
