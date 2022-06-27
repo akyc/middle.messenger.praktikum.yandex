@@ -30,6 +30,7 @@ npm run build
 ```bash
 npm start
 ```
+
 Запуск анализа скриптов
 ```bash
 npm run eslint
@@ -42,3 +43,6 @@ npm run stylelint
 ```bash
 npm run fix
 ```
+
+[Pull request sprint_2](https://github.com/akyc/middle.messenger.praktikum.yandex/pull/2)
+
