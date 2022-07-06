@@ -5,6 +5,7 @@ import Chat from './Chat';
 export type ChatlistProps = {
   onChatClick: (id: number) => void;
 };
+
 export default class ChatsList extends Block<ChatlistProps> {
   constructor(props: ChatlistProps) {
     super('div', props);

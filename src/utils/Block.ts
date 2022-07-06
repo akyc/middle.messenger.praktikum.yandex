@@ -10,7 +10,7 @@ export default abstract class Block<T extends object = {}> {
     FLOW_RENDER: 'flow:render',
   };
 
-  _element: HTMLElement | null = null;
+  private _element: HTMLElement | null = null;
 
   private _meta: { tagName: string } = { tagName: 'div' };
 

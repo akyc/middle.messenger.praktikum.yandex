@@ -32,7 +32,7 @@ export default class Error404 extends Block {
     return { errorBlock, button };
   }
 
-  public render(): DocumentFragment {
+  protected render(): DocumentFragment {
     return this.compile(Error404Template);
   }
 }

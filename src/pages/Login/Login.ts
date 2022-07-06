@@ -70,7 +70,7 @@ export default class Login extends Block {
     };
   }
 
-  public render(): DocumentFragment {
+  protected render(): DocumentFragment {
     return this.compile(LoginTemplate);
   }
 }

@@ -78,54 +78,57 @@ export default class Signin extends Block {
       isValid: false,
       validationRule: 'passwordEqual',
     });
-    const formData = [emailInput, loginInput, firstNameInput, secondNameInput, phoneInput, passwordInput];
+    const formData = [
+      emailInput, loginInput, firstNameInput, secondNameInput, phoneInput, passwordInput,
+    ];
     const submitButton = new Button({
-        className: 'btn-primary btn-block',
-        text: 'Зарегистрироваться',
-        events: {
-            click: (e) => {
-                e.preventDefault();
-                formData.forEach((input) => {
-                    input.validate();
-                })
-                passwordCheckInput.validate(passwordInput.value)
-                console.log(
-                     {
-                        email: emailInput.value, 
-                        login: loginInput.value, 
-                        firstName: firstNameInput.value, 
-                        secondName: secondNameInput.value, 
-                        phone: phoneInput.value, 
-                        password: passwordInput.value,
-                     }
-                )
-            }
-        }
+      className: 'btn-primary btn-block',
+      text: 'Зарегистрироваться',
+      events: {
+        click: (e) => {
+          e.preventDefault();
+          formData.forEach((input) => {
+            input.validate();
+          });
+          passwordCheckInput.validate(passwordInput.value);
+          // eslint-disable-next-line no-console
+          console.log(
+            {
+              email: emailInput.value,
+              login: loginInput.value,
+              firstName: firstNameInput.value,
+              secondName: secondNameInput.value,
+              phone: phoneInput.value,
+              password: passwordInput.value,
+            },
+          );
+        },
+      },
     });
     const loginButton = new Button({
-        className: 'btn-link btn-block',
-        text: 'Войти',
-        events: {
-            click: (e) => {
-                e.preventDefault();
-                window.location.href = '/login'
-            }
-        }
+      className: 'btn-link btn-block',
+      text: 'Войти',
+      events: {
+        click: (e) => {
+          e.preventDefault();
+          window.location.href = '/login';
+        },
+      },
     });
     return {
-        emailInput,
-        loginInput,
-        firstNameInput,
-        secondNameInput,
-        phoneInput,
-        passwordInput,
-        passwordCheckInput,
-        submitButton,
-        loginButton
+      emailInput,
+      loginInput,
+      firstNameInput,
+      secondNameInput,
+      phoneInput,
+      passwordInput,
+      passwordCheckInput,
+      submitButton,
+      loginButton,
     };
   }
 
-  public render(): DocumentFragment {
+  protected render(): DocumentFragment {
     return this.compile(template);
   }
 }

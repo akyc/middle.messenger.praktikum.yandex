@@ -17,11 +17,11 @@ export default class Input extends Block<InputProps> {
 
   protected getAttributes() {
     return {
-        type: this.props.type,
-        class: `${this.props.className || ''}`,
-        placeholder: this.props.placeholder,
-        name: this.props.name,
-        value: `${this.props.value || ''}`,
+      type: this.props.type,
+      class: `${this.props.className || ''}`,
+      placeholder: this.props.placeholder,
+      name: this.props.name,
+      value: `${this.props.value || ''}`,
     };
   }
 
@@ -33,7 +33,7 @@ export default class Input extends Block<InputProps> {
     return this.props.events ? this.props.events : {};
   }
 
-  render() {
+  protected render() {
     return this.compile(template);
   }
 }

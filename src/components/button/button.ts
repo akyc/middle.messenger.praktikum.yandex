@@ -22,7 +22,7 @@ export default class Button extends Block<ButtonProps> {
     return this.props.events ? this.props.events : {};
   }
 
-  public render(): DocumentFragment {
+  protected render(): DocumentFragment {
     return this.compile(buttonTemplate, { text: this.props.text });
   }
 }

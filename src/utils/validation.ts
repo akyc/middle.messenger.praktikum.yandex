@@ -1,4 +1,4 @@
-export const validation = {
+export const VALIDATION = {
   login: (value: string): { isValid: boolean; message: string } => ({
     isValid: /^(?=.*[A-Za-z\-_])(?=.*[\d]*)[A-Za-z\d\-_]{3,20}$/.test(value),
     message: 'От 3 до 20 символов, латиница, может содержать цифры, но не состоять из них, без пробелов, без спецсимволов',
@@ -29,4 +29,4 @@ export const validation = {
   }),
 };
 
-export type validationRuleStrings = keyof typeof validation;
+export type validationRuleStrings = keyof typeof VALIDATION;

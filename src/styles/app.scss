@@ -14,8 +14,8 @@
 
 html {
   font-family: Inter, sans-serif;
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
   color: $text-color;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@ nav {
   }
 
   li {
-    padding: 5px 0;
+    padding: 0.3125rem 0;
   }
 }
 
@@ -48,33 +48,33 @@ a {
 
 .form-container {
   display: flex;
-  box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%);
-  border-radius: 12px;
-  width: 340px;
-  min-height: 450px;
+  box-shadow: 0 0 0.25rem 0 rgb(0 0 0 / 14%);
+  border-radius: 0.75rem;
+  width: 21.25rem;
+  min-height:  28.125rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding:  1.875rem;
   justify-content: space-between;
   flex-grow: 1;
 
   &-entries {
-    margin-bottom: 45px;
+    margin-bottom:  2.8125rem;
 
     &__title {
       display: block;
       text-align: center;
-      margin: 20px 0;
+      margin: 1.25rem 0;
     }
   }
 }
 
 h1 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   font-weight: $medium;
   color: $text-color;
 }

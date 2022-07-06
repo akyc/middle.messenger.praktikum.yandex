@@ -6,36 +6,36 @@
   .sidebar {
     height: 100vh;
     overflow-y: hidden;
-    flex-basis: 319px;
+    flex-basis:  19.9375rem;
     background: $bg-light;
-    border-right: 1px solid $border-color;
-    padding: 9px 0;
+    border-right: 0.0625rem solid $border-color;
+    padding: 0.5625rem 0;
     flex-shrink: 0;
 
     &__profile {
       text-align: right;
-      padding: 12px 9px;
+      padding: 0.75rem 0.5625rem;
     }
 
     &__search {
-      padding: 12px 9px;
+      padding: 0.75rem 0.5625rem;
 
       .search-input {
         width: 100%;
         background: #efefef;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 500;
         text-align: center;
-        padding: 10px 0;
+        padding: 0.625rem 0;
         border: transparent;
-        border-radius: 5px;
+        border-radius: 0.3125rem;
       }
     }
 
     &__chats-list {
       height: 100%;
       overflow-y: scroll;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 0.0625rem solid $border-color;
     }
   }
 
@@ -50,7 +50,7 @@
       flex-direction: column;
       height: 100%;
       flex: 100%;
-      padding: 0 20px;
+      padding: 0 1.25rem;
 
       .header {
         position: relative;
@@ -58,17 +58,17 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 54px;
-        border-bottom: 1px solid $border-color;
+        height:  3.375rem;
+        border-bottom: 0.0625rem solid $border-color;
 
         &__avatar {
           flex: none;
-          padding: 0 10px 0 0;
+          padding: 0 0.625rem 0 0;
 
           img {
             border-radius: 50%;
-            width: 34px;
-            height: 34px;
+            width:  2.125rem;
+            height:  2.125rem;
           }
         }
 
@@ -77,10 +77,10 @@
           flex-direction: column;
           flex-grow: 1;
           justify-content: center;
-          font-size: 13px;
+          font-size: 0.8125rem;
           font-weight: $bold;
           color: $text-color;
-          line-height: 13px;
+          line-height: 0.8125rem;
         }
 
         &__menu {
@@ -95,7 +95,7 @@
         order: 2;
 
         &__container {
-          padding-bottom: 30px;
+          padding-bottom:  1.875rem;
           display: flex;
           flex-direction: column;
           height: 100%;
@@ -119,21 +119,21 @@
           position: relative;
           flex: none;
           background: $bg-secondary;
-          border-radius: 0 12px 12px;
-          max-width: 420px;
+          border-radius: 0 0.75rem 0.75rem;
+          max-width:  26.25rem;
           color: $text-color;
-          font-size: 12px;
-          line-height: 15px;
-          padding: 10px;
-          margin-top: 10px;
+          font-size: 0.75rem;
+          line-height: 0.9375rem;
+          padding: 0.625rem;
+          margin-top: 0.625rem;
 
           &.auth {
             background: $bg-primary-hover;
-            border-radius: 12px 12px 0;
+            border-radius: 0.75rem 0.75rem 0;
           }
 
           p {
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
           }
         }
       }
@@ -147,12 +147,12 @@
         align-items: center;
         order: 3;
         width: 100%;
-        min-height: 54px;
-        border-top: 1px solid $border-color;
+        min-height:  3.375rem;
+        border-top: 0.0625rem solid $border-color;
 
         &__addfile {
           flex: none;
-          padding: 0 10px 0 0;
+          padding: 0 0.625rem 0 0;
           cursor: pointer;
         }
 
@@ -164,12 +164,12 @@
         }
 
         .input-message {
-          height: 32px;
+          height:  2rem;
           border: transparent;
-          border-radius: 16px;
-          padding: 12px 20px;
+          border-radius: 1rem;
+          padding: 0.75rem 1.25rem;
           color: $text-color;
-          font-size: 12px;
+          font-size: 0.75rem;
           font-weight: $medium;
           background: $bg-light;
 
@@ -179,11 +179,11 @@
         }
 
         &__sendmessage {
-          padding: 0 0 0 10px;
+          padding: 0 0 0 0.625rem;
 
           button {
-            height: 28px;
-            width: 28px;
+            height:  1.75rem;
+            width:  1.75rem;
             transform: rotate(180deg);
             display: flex;
             align-items: center;
@@ -196,8 +196,8 @@
     }
 
     .empty {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 0.75rem;
+      line-height: 0.75rem;
       color: $secondary-color;
     }
   }

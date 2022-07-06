@@ -1,4 +1,4 @@
-export enum METHOD_TYPES {
+export enum MethodTypes {
   GET = 'GET',
   PUT = 'PUT',
   POST = 'POST',
@@ -7,7 +7,7 @@ export enum METHOD_TYPES {
 
 interface IOptions {
   headers?: Record<string, string>,
-  method: METHOD_TYPES,
+  method: MethodTypes,
   data?: Document | XMLHttpRequestBodyInit;
 }
 
@@ -20,30 +20,30 @@ function queryStringify(data: Record<string, unknown>): string {
 }
 
 export class HTTPTransport {
-  get = (url: string, options: IOptions = { method: METHOD_TYPES.GET }) => {
-    this.request(url, { ...options, method: METHOD_TYPES.GET });
+  public get = (url: string, options: IOptions = { method: MethodTypes.GET }) => {
+    this.request(url, { ...options, method: MethodTypes.GET });
   };
 
-  put = (url: string, options: IOptions = { method: METHOD_TYPES.GET }) => {
-    this.request(url, { ...options, method: METHOD_TYPES.PUT });
+  public put = (url: string, options: IOptions = { method: MethodTypes.GET }) => {
+    this.request(url, { ...options, method: MethodTypes.PUT });
   };
 
-  post = (url: string, options: IOptions = { method: METHOD_TYPES.GET }) => {
-    this.request(url, { ...options, method: METHOD_TYPES.POST });
+  public post = (url: string, options: IOptions = { method: MethodTypes.GET }) => {
+    this.request(url, { ...options, method: MethodTypes.POST });
   };
 
-  delete = (url: string, options: IOptions = { method: METHOD_TYPES.GET }) => {
-    this.request(url, { ...options, method: METHOD_TYPES.DELETE });
+  public delete = (url: string, options: IOptions = { method: MethodTypes.GET }) => {
+    this.request(url, { ...options, method: MethodTypes.DELETE });
   };
 
-  request = (url: string, options: IOptions, queryData: Record<string, unknown> = {}) => {
+  public request = (url: string, options: IOptions, queryData: Record<string, unknown> = {}) => {
     const {
       headers = {}, method, data,
     } = options;
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       let urlGet = url;
-      if (method === METHOD_TYPES.GET && queryData) {
+      if (method === MethodTypes.GET && queryData) {
         urlGet += `${queryStringify(queryData)}`;
       }
 
@@ -59,7 +59,7 @@ export class HTTPTransport {
       xhr.onabort = reject;
       xhr.onerror = reject;
 
-      if (method === METHOD_TYPES.GET || !data) {
+      if (!data) {
         xhr.send();
       } else {
         xhr.send(data);

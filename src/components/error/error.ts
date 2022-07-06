@@ -10,14 +10,14 @@ export default class Error extends Block<ErrorProps> {
   constructor(props: ErrorProps) {
     super('div', props);
   }
-  
+
   protected getAttributes() {
     return {
       class: 'error-message',
     };
   }
 
-  public render() {
+  protected render() {
     return this.compile(template, {
       title: this.props.title,
       subtitle: this.props.subtitle,
