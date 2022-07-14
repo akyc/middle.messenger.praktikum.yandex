@@ -1,0 +1,22 @@
+.error{
+    &-page > div,
+    &-message{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-message{
+        &__title{
+            font-size:  2.5rem;
+            line-height:  2.5rem;
+            font-weight: $medium;
+            margin-bottom: 1.25rem;
+        }
+        &__subtitle{
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            margin-bottom:  4.3125rem;
+        }
+    }
+}

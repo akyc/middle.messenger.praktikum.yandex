@@ -8,14 +8,14 @@
     &-primary{
         background: $primary-color;
         color: #fff;
-        font-size: 13px;
-        border-radius: 8px;
-        padding: 12px 0;
-        margin-bottom: 14px;
+        font-size: 0.8125rem;
+        border-radius: 0.5rem;
+        padding: 0.75rem 0;
+        margin-bottom: 0.875rem;
     }
     &-link{
         color: $primary-color;
-        font-size: 11px;
+        font-size: 0.6875rem;
         &-secondary{
             color: $secondary-color
         }
@@ -25,11 +25,14 @@
         width: 100%;
         text-align: center;
     }
+    &-round {
+        border-radius: 50%;
+    }
     &.red{
-        color: #FF0000;
+        color: $danger-color;
     }
     &-md{
-        font-size: 13px;
-        line-height: 13px;
+        font-size: 0.8125rem;
+        line-height: 0.8125rem;
     }
 }

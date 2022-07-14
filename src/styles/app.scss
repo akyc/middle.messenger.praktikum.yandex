@@ -1,69 +1,80 @@
-@import './vars';
-@import './chats';
-@import './profile';
-@import '../components/error-page/error-page';
-@import '../components/button/button';
-@import '../components/input/input';
-@import '../components/chat/chat';
+@import "./vars";
+@import "./chats";
+@import "./profile";
+@import "../components/error/error";
+@import "../components/button/button";
+@import "../components/input/input";
+@import "../components/chat/chat";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    line-height: 13px;
-    color: $text-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+
+html {
+  font-family: Inter, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  color: $text-color;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
-.app{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-nav{
-    ul{
-        list-style: none;
+
+nav {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding: 0.3125rem 0;
+  }
+}
+
+a {
+  color: $primary-color;
+}
+
+.form-container {
+  display: flex;
+  box-shadow: 0 0 0.25rem 0 rgb(0 0 0 / 14%);
+  border-radius: 0.75rem;
+  width: 21.25rem;
+  min-height:  28.125rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding:  1.875rem;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  &-entries {
+    margin-bottom:  2.8125rem;
+
+    &__title {
+      display: block;
+      text-align: center;
+      margin: 1.25rem 0;
     }
-    li{
-        padding: 5px 0;
-    }
+  }
 }
-a{
-    color: $primary-color;
-}
-.form-container{
-    display: flex;
-    box-shadow: 0 0 4px 0 rgb(0 0 0 /.14);
-    border-radius: 12px;
-    width: 340px;
-    min-height: 450px;
-    
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    justify-content: space-between;
-    flex-grow: 1;
-    &-entries{
-        margin-bottom: 45px;
-        &__title{
-            display: block;
-            text-align: center;
-            margin: 20px 0;
-        }
-    }
-}
-h1{
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: $medium;
-    color: $text-color;
+
+h1 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: $medium;
+  color: $text-color;
 }
